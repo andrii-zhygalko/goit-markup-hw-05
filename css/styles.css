@@ -555,6 +555,7 @@ address {
   /* outline: 1px solid tomato; */
   width: 408px;
   min-height: 584px;
+  padding: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -568,8 +569,7 @@ address {
 .modal-close-button {
   display: block;
   margin-left: auto;
-  padding-top: 24px;
-  padding-right: 24px;
+  padding: 0;
   margin-bottom: 24px;
   border: none;
   background: transparent;
@@ -607,5 +607,4 @@ address {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 0 24px;
 }
