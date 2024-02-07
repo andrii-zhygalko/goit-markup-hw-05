@@ -564,3 +564,48 @@ address {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
+
+.modal-close-button {
+  display: block;
+  margin-left: auto;
+  padding-top: 24px;
+  padding-right: 24px;
+  margin-bottom: 24px;
+  border: none;
+  background: transparent;
+  /* width: auto; */
+  /* overflow: visible; */
+}
+
+.close-ellipse {
+  fill: #e7e9fc;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  /* position: absolute; */
+}
+
+.close-cross {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.modal-close-button:active .close-ellipse {
+  fill: #404bbf;
+}
+
+.modal-close-button:active .close-cross {
+  fill: #fafafa;
+}
+
+.modal-title {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+
+  /* Body Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 0 24px;
+}
