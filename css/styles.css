@@ -553,56 +553,51 @@ address {
 
 .modal {
   /* outline: 1px solid tomato; */
-  width: 408px;
-  min-height: 584px;
-  padding: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  width: 408px;
+  min-height: 584px;
+  padding: 24px;
+  background-color: #fcfcfc;
   border-radius: 4px;
-  background: #fcfcfc;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close-button {
-  display: block;
-  margin-left: auto;
-  padding: 0;
-  margin-bottom: 24px;
-  border: none;
-  background: transparent;
-  /* width: auto; */
-  /* overflow: visible; */
-}
-
-.close-ellipse {
-  fill: #e7e9fc;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
-  /* position: absolute; */
-}
-
-.close-cross {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 24px; */
 }
 
-.modal-close-button:active .close-ellipse {
-  fill: #404bbf;
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
-.modal-close-button:active .close-cross {
-  fill: #fafafa;
+.modal-close-button:hover > .modal-close-icon,
+.modal-close-button:focus > .modal-close-icon {
+  fill: #ffffff;
 }
 
 .modal-title {
-  color: var(--NAVY-BLUE, #2e2f42);
+  /* margin-top: 72px; */
+  color: #2e2f42;
   text-align: center;
-
-  /* Body Medium */
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
