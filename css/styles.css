@@ -625,9 +625,46 @@ address {
 .modal-input {
   width: 100%;
   height: 40px;
-  margin-bottom: 8px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.modal-send-button:hover,
+.modal-send-button:focus {
+  background: #404bbf;
+}
+
+.modal-label {
+  display: block;
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-bottom: 16px;
+}
+
+.modal-input-wrap {
+  margin-bottom: 8px;
+}
+
+.modal-icon-wrap {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .modal-send-button {
@@ -644,28 +681,4 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-send-button:hover,
-.modal-send-button:focus {
-  background: #404bbf;
-}
-
-.modal-label {
-  display: block;
-  /* margin-bottom: 4px; */
-  color: #8e8f99;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  margin-bottom: 4px;
-}
-
-.modal-textarea {
-  width: 100%;
-  height: 120px;
-  border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-bottom: 16px;
 }
