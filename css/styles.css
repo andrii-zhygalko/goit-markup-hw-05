@@ -549,19 +549,20 @@ address {
 }
 
 .footer-subscribe-form {
-}
-
-.subscribe-form {
-  display: inline-flex;
+  outline: 1px solid tomato;
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 24px;
+}
+.footer-email-label {
+  margin-left: -24px;
 }
 
 .footer-input {
   padding: 8px 16px;
   width: 264px;
   height: 40px;
-  margin-right: 24px;
   background: #2e2f42;
   border-radius: 4px;
   border: 1px solid #fff;
@@ -585,17 +586,24 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  min-width: 165px;
+  height: 40px;
   padding: 8px 24px;
   border: none;
   border-radius: 4px;
   background: #4d5ae5;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  cursor: pointer;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button-icon {
+  margin-left: 16px;
 }
 
 .footer-submit-button:hover,
@@ -612,6 +620,7 @@ address {
 .footer-subscribe-text {
   color: #fff;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
@@ -670,7 +679,7 @@ address {
 }
 
 .modal-close-icon {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover,
@@ -719,7 +728,8 @@ address {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   outline: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
@@ -740,9 +750,18 @@ address {
 
 .modal-comment {
   height: 120px;
-  margin-bottom: 16px;
   padding: 8px 16px;
   resize: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-area {
+  margin-bottom: 16px;
 }
 
 .modal-comment::placeholder {
@@ -751,6 +770,10 @@ address {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
+}
+
+.modal-checkbox-wrap {
+  margin-bottom: 24px;
 }
 
 .modal-checkbox {
@@ -764,7 +787,6 @@ address {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  margin-bottom: 24px;
   position: relative;
 }
 
