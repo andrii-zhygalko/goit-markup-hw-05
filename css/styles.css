@@ -784,7 +784,7 @@ address {
   letter-spacing: 0.04em;
 }
 
-.modal-checkbox-text span {
+.modal-checkbox-span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
