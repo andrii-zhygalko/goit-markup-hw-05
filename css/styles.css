@@ -557,26 +557,26 @@ address {
 }
 
 .footer-input {
-  padding: 8px 16px;
   width: 264px;
   height: 40px;
-  border-radius: 4px;
+  padding: 8px 16px;
   border: 1px solid #fff;
+  border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0.04em;
+  color: #fff;
   background-color: transparent;
 }
 
 .footer-input::placeholder {
-  color: #fff;
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0.04em;
+  color: #fff;
 }
 
 .footer-submit-button {
@@ -601,9 +601,9 @@ address {
 
 .footer-button-icon {
   margin-left: 16px;
-  fill: #ffffff;
   width: 24px;
   height: 24px;
+  fill: #ffffff;
 }
 
 .footer-submit-button:hover,
@@ -655,19 +655,19 @@ address {
 }
 
 .modal-close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
   padding: 0;
-  cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
   background-color: #e7e9fc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -776,12 +776,12 @@ address {
 .modal-checkbox-text {
   display: inline-flex;
   align-items: center;
+  position: relative;
   color: #8e8f99;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  position: relative;
 }
 
 .modal-checkbox-text span {
@@ -816,19 +816,19 @@ address {
 }
 
 .modal-send-button {
-  margin: 0 auto;
-  border: none;
   display: block;
   min-width: 169px;
+  margin: 0 auto;
   padding: 16px 32px;
+  border: none;
   border-radius: 4px;
-  background: #4d5ae5;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
   color: #fff;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
