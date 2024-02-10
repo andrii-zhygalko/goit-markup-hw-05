@@ -560,7 +560,6 @@ address {
   padding: 8px 16px;
   width: 264px;
   height: 40px;
-  background: #2e2f42;
   border-radius: 4px;
   border: 1px solid #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -569,6 +568,7 @@ address {
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0.04em;
+  background-color: transparent;
 }
 
 .footer-input::placeholder {
@@ -601,17 +601,14 @@ address {
 
 .footer-button-icon {
   margin-left: 16px;
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
 }
 
 .footer-submit-button:hover,
 .footer-submit-button:focus {
   background: #404bbf;
-}
-
-.footer-submit-button span {
-  fill: #ffffff;
-  width: 24px;
-  height: 24px;
 }
 
 .footer-subscribe-text {
@@ -787,15 +784,8 @@ address {
   position: relative;
 }
 
-.modal-checkbox-span {
-  display: inline-flex;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-checkbox-text span {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -803,7 +793,8 @@ address {
   margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border,
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
   white-space: nowrap;
