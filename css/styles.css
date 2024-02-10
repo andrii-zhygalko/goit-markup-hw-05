@@ -574,7 +574,6 @@ address {
 }
 
 .footer-input::placeholder {
-  /* padding: 8px 16px; */
   color: #fff;
   font-size: 12px;
   font-weight: 400;
@@ -758,7 +757,7 @@ address {
 }
 
 .modal-checkbox-text {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: #8e8f99;
   font-size: 12px;
