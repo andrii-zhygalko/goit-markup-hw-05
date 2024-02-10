@@ -330,9 +330,6 @@ address {
   margin-bottom: 8px;
 }
 
-.social-container {
-}
-
 .team-card-descr .social-links {
   display: flex;
   justify-content: center;
@@ -509,6 +506,10 @@ address {
   max-width: 264px;
 }
 
+.social-container {
+  margin-right: 80px;
+}
+
 .footer .social-links {
   display: flex;
   justify-content: center;
@@ -541,6 +542,67 @@ address {
 .footer .social-icon .link:hover,
 .footer .social-icon .link:focus {
   background-color: #31d0aa;
+}
+
+.footer-subscribe-wrapper {
+  /* outline: 1px solid orange; */
+}
+
+.footer-subscribe-form {
+}
+
+.subscribe-form {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  margin-right: 24px;
+  background: #2e2f42;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-input::placeholder {
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.footer-submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  background: #4d5ae5;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.footer-submit-button span {
+  fill: #ffffff;
+}
+
+.footer-subscribe-text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .backdrop {
@@ -692,6 +754,7 @@ address {
   line-height: 1.17;
   letter-spacing: 0.04em;
   margin-bottom: 24px;
+  position: relative;
 }
 
 .modal-checkbox-text span {
@@ -706,9 +769,11 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border,
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
+  white-space: nowrap;
 }
 
 .modal-checkbox-text a {
+  white-space: nowrap;
   text-decoration: underline;
   color: #4d5ae5;
 }
