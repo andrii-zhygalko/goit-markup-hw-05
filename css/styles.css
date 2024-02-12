@@ -780,7 +780,7 @@ address {
 }
 
 .modal-checkbox-icon {
-  /* display: inline-flex; */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -801,7 +801,6 @@ address {
 }
 
 .modal-checbox-link {
-  outline: 1px solid tomato;
 }
 
 .modal-checkbox:checked + .modal-checkbox-text span {
