@@ -829,6 +829,5 @@ address {
 .modal-send-button:hover,
 .modal-send-button:focus {
   background-color: #404bbf;
+  outline: 1px solid tomato;
 }
-
-/* comment */
