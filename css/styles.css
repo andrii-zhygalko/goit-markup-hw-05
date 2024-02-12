@@ -801,6 +801,7 @@ address {
 }
 
 .modal-checbox-link {
+  outline: 1px solid tomato;
 }
 
 .modal-checkbox:checked + .modal-checkbox-text span {
